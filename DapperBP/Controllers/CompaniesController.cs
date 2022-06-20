@@ -46,7 +46,7 @@ namespace DapperBP.Controllers
             return View(company);
         }
 
-        // GET: Companies/Create
+        // GET: Companies/Create      
         public IActionResult Create()
         {
             return View();
@@ -61,7 +61,7 @@ namespace DapperBP.Controllers
         {
             if (ModelState.IsValid)
             {
-                _compRepo.Add(company);
+                 _compRepo.Add(company);
                 return RedirectToAction(nameof(Index));
             }
             return View(company);

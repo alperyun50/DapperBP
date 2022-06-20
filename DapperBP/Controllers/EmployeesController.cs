@@ -54,7 +54,7 @@ namespace DapperBP.Controllers
             return View(employee);
         }
 
-        // GET: Companies/Edit/5
+        // GET: Employees/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _empRepo == null)
@@ -88,7 +88,7 @@ namespace DapperBP.Controllers
             return View(employee);
         }
 
-        // GET: Companies/Delete/5
+        // GET: Employees/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _empRepo == null)
